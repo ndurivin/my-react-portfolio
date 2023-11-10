@@ -1,3 +1,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+.nav-link {
+  cursor: pointer;
+}
+.section {
+  /* height: 50vh; */
+}

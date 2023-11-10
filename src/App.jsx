@@ -1,13 +1,21 @@
+import About from "./components/About";
 import Banner from "./components/Banner";
-import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
     <>
       <Navbar />
       <Banner />
-      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Testimonials />
+      <Footer />
     </>
   );
 }
