@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+      <nav className="container-fluid navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div className="container">
           <a className="navbar-brand" href="#">
             VINN
           </a>
@@ -17,7 +17,7 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse justify-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
