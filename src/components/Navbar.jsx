@@ -1,4 +1,4 @@
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -27,82 +27,82 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={-100}
                 duration={200}
                 className="nav-link text-white"
               >
                 About
-              </ScrollLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to="services"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={-100}
                 duration={200}
                 className="nav-link text-white"
               >
                 Services
-              </ScrollLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to="technologies"
                 spy={true}
                 smooth={true}
-                offset={-300}
+                offset={-100}
                 duration={200}
                 className="nav-link text-white"
               >
                 Technologies
-              </ScrollLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-300}
+                offset={-100}
                 duration={200}
                 className="nav-link text-white"
               >
                 Projects
-              </ScrollLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to="testimonials"
                 spy={true}
                 smooth={true}
-                offset={-200}
+                offset={-100}
                 duration={200}
                 className="nav-link text-white"
               >
                 Testimonials
-              </ScrollLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={2100}
+                offset={-100}
                 duration={200}
                 className="btn btn-primary"
               >
                 Connect
-              </ScrollLink>
+              </Link>
             </li>
           </ul>
         </div>

@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Sarah Johnson",
-      desc: "'Vinn consistently delivered high-quality code, met tight deadlines, and communicated effectively throughout the development process, with the end result being exactly what we wanted.'",
+      desc: "'Vinn consistently delivered high-quality code, met tight deadlines, and communicated effectively throughout the development process.'",
       user: userf,
     },
     {
