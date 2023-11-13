@@ -27,6 +27,6 @@
 .contacts {
   background-color: cadetblue;
 }
-/* .section {
-  height: 70vh;
-} */
+.active {
+  color: rgb(147, 236, 5) !important;
+}

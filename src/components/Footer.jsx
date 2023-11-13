@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
 
 const Footer = () => {
@@ -24,13 +25,56 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Link 1</a>
+                <Link
+                  active-footerClass="active-footer"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={200}
+                  className="nav-link text-white"
+                >
+                  About Me
+                </Link>
               </li>
               <li>
-                <a href="#">Link 2</a>
+                <Link
+                  active-footerClass="active-footer"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={200}
+                  className="nav-link text-white"
+                >
+                  Services
+                </Link>
               </li>
               <li>
-                <a href="#">Link 3</a>
+                <Link
+                  active-footerClass="active-footer"
+                  to="technologies"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={200}
+                  className="nav-link text-white"
+                >
+                  Technologies
+                </Link>
+              </li>
+              <li>
+                <Link
+                  active-footerClass="active-footer"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={200}
+                  className="nav-link text-white"
+                >
+                  Projects
+                </Link>
               </li>
             </ul>
           </div>
@@ -45,7 +89,7 @@ const Footer = () => {
         </div>
 
         {/* Lower Row - Copyright */}
-        <div className="row pt-3">
+        <div className="row pt-3 py-5">
           <div className="col">
             <p className="text-center">
               &copy; {currentYear} Vinn Nduri - Fullstack Develper. All Rights
