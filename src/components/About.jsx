@@ -63,18 +63,18 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               key={id}
-              className="mx-5"
+              className="mx-5 about-icons"
             >
               {icon}
             </a>
           ))}
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mt-5">
           <img src={avartar} alt="profile picture" />
         </div>
         <div className="py-2 d-flex justify-content-center">
           <a
-            className="btn btn-warning"
+            className="btn btn-danger"
             href="../../public/Vincent Nduri.pdf"
             download={true}
           >

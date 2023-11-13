@@ -12,6 +12,21 @@
   height: 80px !important;
   width: 80px !important;
 }
+.testimonials-icon {
+  height: 50px !important;
+  width: 50px !important;
+}
+.about-icons {
+  font-size: 50px !important;
+  color: teal;
+}
+.contact-icons {
+  font-size: 30px !important;
+  color: white;
+}
+.contacts {
+  background-color: cadetblue;
+}
 /* .section {
   height: 70vh;
 } */

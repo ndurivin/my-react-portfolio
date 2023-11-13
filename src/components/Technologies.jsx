@@ -36,8 +36,8 @@ const Technologies = () => {
         <div className="row ">
           {icons.map((item) => (
             <>
-              <div className="col-md-3 mb-4 ">
-                <div key={item.id} className="card">
+              <div key={item.id} className="col-md-3 mb-4 ">
+                <div className="card">
                   <img src={item.image} className="tech-icon" alt={item.name} />
                   <div className="card-body">
                     <p className="card-text">{item.name}</p>

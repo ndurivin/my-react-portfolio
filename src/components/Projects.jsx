@@ -1,4 +1,4 @@
-import cmr from "../assets/cmr1.png";
+import cmr from "../assets/cmr2.png";
 import kayole from "../assets/kayole.png";
 import berils from "../assets/berils.png";
 import unikcolors from "../assets/unikcolors.png";
