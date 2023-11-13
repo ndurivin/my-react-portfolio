@@ -1,22 +1,11 @@
-import {
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
-import profile from "../assets/mine.png";
+import avartar from "../assets/avartar.png";
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
   const socials = [
-    {
-      id: 1,
-      link: "https://www.facebook.com/vincent.nduri",
-      icon: <FaFacebook />,
-    },
     {
       id: 2,
       link: "https://github.com/ndurivin",
@@ -32,28 +21,19 @@ const Hero = () => {
       link: "https://twitter.com/vinnduri",
       icon: <FaTwitter />,
     },
-    {
-      id: 5,
-      link: "https://www.instagram.com/vinnnduri/",
-      icon: <FaInstagram />,
-    },
   ];
 
   const [text] = useTypewriter({
-    words: [
-      "Full-stack Developer",
-      "Technical Mentor",
-      "IT Support Technician",
-    ],
+    words: ["Full-stack Developer", "Cybersecurity Expert", "Technical Mentor"],
     loop: {},
     typeSpeed: 150,
     deleteSpeed: 90,
   });
 
   return (
-    <section className="section container py-5 mt-5" id="about">
+    <section className="section container py-5" id="about">
       <div>
-        <h2 className="text-center mt-5">VINCENT NDURI</h2>
+        <h1 className="text-center mt-5">VINCENT NDURI</h1>
         <h1 className="text-center py-2">
           I am a
           <span className="p-2" style={{ fontWeight: "light", color: "teal" }}>
@@ -67,11 +47,11 @@ const Hero = () => {
           <span className=""></span>I am a certified full stack developer with a
           passion for building innovative and impactful applications. My
           expertise lies in utilizing HTML, CSS, JavaScript, React, Mysql,
-          Postgresql, Ruby, Rspec, Rails, PHP and Django to bring ideas to life.
-          With a certification from Moringa School, I have honed my skills and
-          gained valuable experience in software development. I am always eager
-          to learn and grow, and I thrive when working with a team of diverse
-          individuals, both remotely and physically. I believe that
+          Postgresql, Ruby, Rspec, Rails, Python, PHP and Django to bring ideas
+          to life. With a certification from Moringa School, I have honed my
+          skills and gained valuable experience in software development. I am
+          always eager to learn and grow, and I thrive when working with a team
+          of diverse individuals, both remotely and physically. I believe that
           collaboration is key to creating amazing products, and I am committed
           to constantly improving my skills and contributing to the development
           community.
@@ -90,11 +70,11 @@ const Hero = () => {
           ))}
         </div>
         <div className="d-flex justify-content-center">
-          <img src={profile} alt="profile picture" />
+          <img src={avartar} alt="profile picture" />
         </div>
-        <div className="py-3 d-flex justify-content-center">
+        <div className="py-2 d-flex justify-content-center">
           <a
-            className="btn btn-success"
+            className="btn btn-warning"
             href="../../public/Vincent Nduri.pdf"
             download={true}
           >

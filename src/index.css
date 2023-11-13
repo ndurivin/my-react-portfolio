@@ -4,6 +4,14 @@
 .nav-link {
   cursor: pointer;
 }
-.section {
-  /* height: 50vh; */
+.services-icon {
+  height: 100px !important;
+  width: 100px !important;
 }
+.tech-icon {
+  height: 80px !important;
+  width: 80px !important;
+}
+/* .section {
+  height: 70vh;
+} */

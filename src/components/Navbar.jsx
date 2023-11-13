@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div className="container" id="home">
-        <a className="navbar-brand" href="home">
+        <a className="navbar-brand" href="#" id="home">
           <img src={logo} alt="logo" height="60" />
           <span className="text-white mx-2">VINN</span>
         </a>
@@ -26,19 +26,6 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <ScrollLink
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={150}
-                duration={200}
-                className="nav-link text-white"
-              >
-                Home
-              </ScrollLink>
-            </li>
             <li className="nav-item">
               <ScrollLink
                 activeClass="active"
@@ -68,14 +55,14 @@ const Navbar = () => {
             <li className="nav-item">
               <ScrollLink
                 activeClass="active"
-                to="skills"
+                to="technologies"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={-300}
                 duration={200}
                 className="nav-link text-white"
               >
-                Skills
+                Technologies
               </ScrollLink>
             </li>
             <li className="nav-item">
@@ -84,7 +71,7 @@ const Navbar = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={-300}
                 duration={200}
                 className="nav-link text-white"
               >
@@ -97,7 +84,7 @@ const Navbar = () => {
                 to="testimonials"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={-200}
                 duration={200}
                 className="nav-link text-white"
               >
@@ -110,7 +97,7 @@ const Navbar = () => {
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={2100}
                 duration={200}
                 className="btn btn-primary"
               >
