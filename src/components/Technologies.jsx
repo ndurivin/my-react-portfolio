@@ -7,6 +7,8 @@ import css from "../assets/css.png";
 import php from "../assets/php.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bootstrap.png";
+import django from "../assets/django.png";
+import ruby from "../assets/ruby.png";
 
 const Technologies = () => {
   const icons = [
@@ -19,6 +21,8 @@ const Technologies = () => {
     { id: 7, name: "Bootstrap", image: bootstrap },
     { id: 8, name: "Tailwind", image: tailwind },
     { id: 9, name: "PHP", image: php },
+    { id: 10, name: "Ruby", image: ruby },
+    { id: 11, name: "Django", image: django },
   ];
   return (
     <section className="container mt-5 py-5" id="technologies">
