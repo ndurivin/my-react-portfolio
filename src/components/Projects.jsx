@@ -3,6 +3,7 @@ import kayole from "../assets/kayole.png";
 import berils from "../assets/berils.png";
 import unikcolors from "../assets/unikcolors.png";
 import umoja2 from "../assets/umoja2.png";
+import vinn from "../assets/vinn.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,30 +15,36 @@ const Projects = () => {
   }, []);
   const projects = [
     {
-      id: 1,
+      id: 2,
+      name: "Portfolio App",
+      link: "https://vinn-portfolio.vercel.app/",
+      image: vinn,
+    },
+    {
+      id: 2,
       name: "Umoja II SDA Church",
       link: "https://www.umojaiisda.org/",
       image: umoja2,
     },
     {
-      id: 2,
+      id: 3,
       name: "CMR - Africa",
       link: "https://www.cmrafrica.org/",
       image: cmr,
     },
     {
-      id: 3,
+      id: 4,
       name: "Kayole Hospital",
       link: "https://www.kayolehospital.co.ke/",
       image: kayole,
     },
     {
-      id: 4,
+      id: 5,
       name: "Beril's Hospital",
       link: "https://berilsmedicalcenter.co.ke/",
       image: berils,
     },
-    { id: 1, name: "Unikcolors Media Institute", link: "", image: unikcolors },
+    { id: 6, name: "Unikcolors Media Institute", link: "", image: unikcolors },
   ];
   return (
     <section
