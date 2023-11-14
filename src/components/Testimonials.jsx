@@ -24,9 +24,9 @@ const Testimonials = () => {
     },
     {
       id: 3,
-      name: "Mark Stevens",
+      name: "Jeptoo",
       desc: "'I've had the privilege of collaborating with Vinn on several projects, and I can confidently say he is one of the most talented developers I've worked with.'",
-      user: userm,
+      user: userf,
     },
   ];
   return (
