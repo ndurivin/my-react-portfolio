@@ -52,7 +52,7 @@ const Hero = () => {
     >
       <div>
         <h1 className="text-center mt-5">
-          I'm <span className="about-name">VINCENT NDURI</span>
+          I am <span className="about-name">VINCENT NDURI</span>
         </h1>
         <h1 className="text-center py-2">
           A
