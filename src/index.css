@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .nav-link {
   cursor: pointer;
@@ -29,4 +29,11 @@
 }
 .active {
   color: rgb(147, 236, 5) !important;
+}
+
+.project-title {
+  text-decoration: none !important;
+}
+.project-title:hover {
+  color: rgb(236, 5, 13);
 }

@@ -4,21 +4,50 @@ import berils from "../assets/berils.png";
 import unikcolors from "../assets/unikcolors.png";
 import umoja2 from "../assets/umoja2.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const projects = [
-    { id: 1, name: "Umoja II SDA Church", link: "", image: umoja2 },
-    { id: 2, name: "CMR - Africa", link: "", image: cmr },
-    { id: 3, name: "Kayole Hospital", link: "", image: kayole },
+    {
+      id: 1,
+      name: "Umoja II SDA Church",
+      link: "https://www.umojaiisda.org/",
+      image: umoja2,
+    },
+    {
+      id: 2,
+      name: "CMR - Africa",
+      link: "https://www.cmrafrica.org/",
+      image: cmr,
+    },
+    {
+      id: 3,
+      name: "Kayole Hospital",
+      link: "https://www.kayolehospital.co.ke/",
+      image: kayole,
+    },
     {
       id: 4,
       name: "Beril's Hospital",
-      link: "",
+      link: "https://berilsmedicalcenter.co.ke/",
       image: berils,
     },
     { id: 1, name: "Unikcolors Media Institute", link: "", image: unikcolors },
   ];
   return (
-    <section className="container mt-5 py-5" id="projects">
+    <section
+      className="container mt-5 py-5"
+      data-aos="flip-right"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+      id="projects"
+    >
       <div className="row mb-4">
         <div className="col">
           <h1 className="text-center">Projects</h1>
@@ -33,14 +62,16 @@ const Projects = () => {
         {projects.map((item) => (
           <>
             <div className="col">
-              <div key={item.id} className="card">
+              <div key={item.id} className="card shadow">
                 <img
                   src={item.image}
                   className="card-img-top"
                   alt={item.name}
                 />
                 <div className="card-body">
-                  <h5 className="card-title text-center">{item.name}</h5>
+                  <a href={item.link} className="project-title text-center">
+                    {item.name}
+                  </a>
                 </div>
               </div>
             </div>

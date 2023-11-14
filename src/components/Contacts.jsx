@@ -52,15 +52,15 @@ const Contacts = () => {
           <div className="col-md-6 mt-3">
             <form action="">
               <div className="form-floating mb-3">
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" required />
                 <label>Name</label>
               </div>
               <div className="form-floating mb-3">
-                <input type="email" className="form-control" />
+                <input type="email" className="form-control" required />
                 <label>Email Address</label>
               </div>
               <div className="form-floating mb-3">
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" required />
                 <label>Contact</label>
               </div>
               <div className="form-floating">

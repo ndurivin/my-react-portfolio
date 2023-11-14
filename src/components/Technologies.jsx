@@ -10,7 +10,14 @@ import bootstrap from "../assets/bootstrap.png";
 import django from "../assets/django.png";
 import ruby from "../assets/ruby.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Technologies = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const icons = [
     { id: 1, name: "Javascript", image: js },
     { id: 2, name: "React", image: react },
@@ -25,7 +32,14 @@ const Technologies = () => {
     { id: 11, name: "Django", image: django },
   ];
   return (
-    <section className="container mt-5 py-5" id="technologies">
+    <section
+      className="container mt-5 py-5"
+      data-aos="zoom-out-down"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+      id="technologies"
+    >
       <div className="row mb-4">
         <div className="col">
           <h1 className="text-center">Technologies</h1>
@@ -37,10 +51,16 @@ const Technologies = () => {
           {icons.map((item) => (
             <>
               <div key={item.id} className="col-md-3 mb-4 ">
-                <div className="card">
-                  <img src={item.image} className="tech-icon" alt={item.name} />
-                  <div className="card-body">
-                    <p className="card-text">{item.name}</p>
+                <div className="card shadow">
+                  <div className="text-center">
+                    <img
+                      src={item.image}
+                      className="tech-icon"
+                      alt={item.name}
+                    />
+                    <div className="card-body">
+                      <p className="card-text">{item.name}</p>
+                    </div>
                   </div>
                 </div>
               </div>

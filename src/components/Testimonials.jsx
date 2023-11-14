@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import userf from "../assets/userf.png";
 import userm from "../assets/userm.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const testimonials = [
     {
       id: 1,
@@ -23,7 +30,14 @@ const Testimonials = () => {
     },
   ];
   return (
-    <section className="container mt-5 py-5" id="testimonials">
+    <section
+      className="container mt-5 py-5"
+      data-aos="zoom-out-up"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+      id="testimonials"
+    >
       <div className="row mb-4">
         <div className="col">
           <h1 className="text-center">Testimonials</h1>
@@ -34,7 +48,7 @@ const Testimonials = () => {
         {testimonials.map((item) => (
           <>
             <div key={item.id} className="col">
-              <div className="card">
+              <div className="card shadow">
                 <img
                   src={item.user}
                   className="testimonials-icon"

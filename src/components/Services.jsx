@@ -1,9 +1,16 @@
+import { useEffect } from "react";
 import backend from "../assets/Backend.png";
 import frontend from "../assets/Frontend.png";
 import database from "../assets/database.png";
 import support from "../assets/support.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const services = [
     {
       id: 1,
@@ -20,18 +27,25 @@ const Services = () => {
     {
       id: 3,
       title: "Database Design",
-      desc: "I have a strong understanding of the database design process and I can build any database from scratch. I have experience with Postgresql & Mysql.",
+      desc: "I have a strong understanding of the database design process and create them from scratch. I have experience with Postgresql & Mysql.",
       icon: database,
     },
     {
       id: 4,
       title: "Technical Support",
-      desc: "I have an in-depth understanding of system's technical knowledge and offer appropriate consultancy services to users and clients.",
+      desc: "I have an in-depth understanding of systems' technical requirements and offer appropriate consultancy services to users and clients.",
       icon: support,
     },
   ];
   return (
-    <section className="container mt-5 py-5" id="services">
+    <section
+      className="container mt-5 py-5"
+      data-aos="flip-right"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+      id="services"
+    >
       <div className="row mb-4">
         <div className="col">
           <h1 className="text-center">Services</h1>
@@ -46,7 +60,7 @@ const Services = () => {
         {services.map((item) => (
           <>
             <div key={item.id} className="col">
-              <div className="card">
+              <div className="card shadow">
                 <img
                   src={item.icon}
                   className="services-icon"
