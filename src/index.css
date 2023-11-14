@@ -5,9 +5,14 @@
   cursor: pointer;
 }
 .services-icon {
-  height: 100px !important;
-  width: 100px !important;
+  height: 80px !important;
+  width: 80px !important;
 }
+
+.services-icon:hover {
+  transform: scale(1.1);
+}
+
 .tech-icon {
   height: 80px !important;
   width: 80px !important;
@@ -16,6 +21,7 @@
   height: 50px !important;
   width: 50px !important;
 }
+
 .about-icons {
   font-size: 50px !important;
   color: teal;

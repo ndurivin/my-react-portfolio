@@ -51,7 +51,7 @@ const Technologies = () => {
           {icons.map((item) => (
             <>
               <div key={item.id} className="col-md-3 mb-4 ">
-                <div className="card shadow">
+                <div className="testimonial card shadow">
                   <div className="text-center">
                     <img
                       src={item.image}
