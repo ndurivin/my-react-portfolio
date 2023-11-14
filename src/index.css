@@ -2,8 +2,10 @@
   font-family: "Nunito", sans-serif;
 }
 
-body {
-  overflow-x: hidden;
+body,
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
 .nav-link {
