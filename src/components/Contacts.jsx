@@ -32,7 +32,7 @@ const Contacts = () => {
           <div className="col-md-6">
             <img className="mb-3" src={contact} alt="contacts" />
             <p className="text-white">Text, Call or WhatsApp on,</p>
-            <p className="text-white">Phone: 0726506565</p>
+            <p className="text-white">Phone: +254 726506565</p>
             <p className="text-white">Email: ndurivo@gmail.com</p>
             <div>
               {socials.map(({ id, link, icon }) => (

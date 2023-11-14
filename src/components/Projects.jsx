@@ -61,8 +61,8 @@ const Projects = () => {
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.map((item) => (
           <>
-            <div className="col">
-              <div key={item.id} className="card shadow">
+            <div key={item.id} className="col">
+              <div className="card shadow">
                 <img
                   src={item.image}
                   className="card-img-top"

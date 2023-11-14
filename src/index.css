@@ -1,6 +1,11 @@
 * {
   font-family: "Nunito", sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 .nav-link {
   cursor: pointer;
 }
