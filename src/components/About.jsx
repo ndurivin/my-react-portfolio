@@ -51,9 +51,11 @@ const Hero = () => {
       id="about"
     >
       <div>
-        <h1 className="text-center mt-5">VINCENT NDURI</h1>
+        <h1 className="text-center mt-5">
+          I'm <span className="about-name">VINCENT NDURI</span>
+        </h1>
         <h1 className="text-center py-2">
-          I am a
+          A
           <span className="p-1" style={{ fontWeight: "light", color: "teal" }}>
             {text}
           </span>

@@ -13,6 +13,9 @@ body {
   height: 80px !important;
   width: 80px !important;
 }
+.about-name {
+  color: rgb(236, 5, 13);
+}
 
 .services-icon:hover {
   transform: scale(1.1);
@@ -30,6 +33,10 @@ body {
 .about-icons {
   font-size: 50px !important;
   color: teal;
+}
+.about-icons:hover {
+  font-size: 50px !important;
+  color: rgb(236, 5, 13);
 }
 .contact-icons {
   font-size: 30px !important;

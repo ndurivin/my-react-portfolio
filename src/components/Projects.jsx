@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <section
       className="container mt-5 py-5"
-      data-aos="flip-right"
+      data-aos="zoom-out-up"
       data-aos-offset="200"
       data-aos-easing="ease-in-sine"
       data-aos-duration="600"

@@ -20,8 +20,8 @@ const Contacts = () => {
     },
   ];
   return (
-    <section className="container-fluid contacts mt-5 py-5" id="contacts">
-      <div className="row mb-4">
+    <section className="contacts mt-5 py-5" id="contacts">
+      <div className="container row mb-4">
         <div className="col">
           <h1 className="text-center text-white py-3">Connect with Me!</h1>
           <p className="text-center"></p>

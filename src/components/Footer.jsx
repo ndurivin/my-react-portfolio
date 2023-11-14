@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-white mt-5">
       <div className="container py-5 mt-5">
-        {/* Upper Row */}
         <div className="row border-bottom pb-3">
           <div className="col-md-4">
             <a className="navbar-brand" href="home">
@@ -26,7 +25,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li>
                 <Link
-                  active-footerClass="active-footer"
+                  active-footerclass="active-footer"
                   to="about"
                   spy={true}
                   smooth={true}
@@ -39,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  active-footerClass="active-footer"
+                  active-footerclass="active-footer"
                   to="services"
                   spy={true}
                   smooth={true}
@@ -52,7 +51,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  active-footerClass="active-footer"
+                  active-footerclass="active-footer"
                   to="technologies"
                   spy={true}
                   smooth={true}
@@ -65,7 +64,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  active-footerClass="active-footer"
+                  active-footerclass="active-footer"
                   to="projects"
                   spy={true}
                   smooth={true}
@@ -89,7 +88,7 @@ const Footer = () => {
         </div>
 
         {/* Lower Row - Copyright */}
-        <div className="row pt-3 py-5">
+        <div className="row pt-3 py-5 mt-5">
           <div className="col">
             <p className="text-center">
               &copy; {currentYear} Vinn Nduri - Fullstack Develper. All Rights
