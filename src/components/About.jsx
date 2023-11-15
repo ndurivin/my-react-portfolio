@@ -32,7 +32,7 @@ const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      "Full-stack Developer..",
+      "Full-Stack Developer..",
       "IT Support Expert..",
       "Technical Mentor..",
     ],
@@ -55,7 +55,6 @@ const Hero = () => {
           I am <span className="about-name">VINCENT NDURI</span>
         </h1>
         <h1 className="text-center py-2">
-          A
           <span className="p-1" style={{ fontWeight: "light", color: "teal" }}>
             {text}
           </span>
