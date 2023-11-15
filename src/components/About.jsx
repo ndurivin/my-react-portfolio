@@ -65,16 +65,11 @@ const Hero = () => {
         </h1>
         <p className="text-center py-3">
           <span className=""></span>I am a certified full stack developer with a
-          passion for building innovative and impactful applications. My
-          expertise lies in utilizing HTML, CSS, JavaScript, React, Mysql,
-          Postgresql, Ruby, Rspec, Rails, Python, PHP and Django to bring ideas
-          to life. With a Software Engineering certification from Moringa School
-          & Flatiron, I have honed my skills and gained valuable experience in
-          software development. I am always eager to learn and grow, and I
-          thrive when working with a team of diverse individuals, both remotely
-          and physically. I believe that collaboration is key to creating
-          amazing products, and I am committed to constantly improving my skills
-          and contributing to the development community.
+          passion for building innovative and impactful applications. Dynamic
+          and detail-oriented software developer with two years of robust
+          experience in the end-to-end software development life cycle. Eager to
+          contribute technical proficiency and innovative thinking within a
+          collaborative team setting.
         </p>
         <div className="d-flex justify-content-center py-4">
           {socials.map(({ id, link, icon }) => (
@@ -95,7 +90,7 @@ const Hero = () => {
         <div className="py-2 d-flex justify-content-center">
           <a
             className="btn btn-danger"
-            href="../../public/Vincent Nduri.pdf"
+            href="../../public/Vinn-Resume.pdf"
             download={true}
           >
             Download Resume{" "}
