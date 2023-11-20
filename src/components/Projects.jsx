@@ -15,7 +15,7 @@ const Projects = () => {
   }, []);
   const projects = [
     {
-      id: 2,
+      id: 1,
       name: "Portfolio App",
       link: "https://vinn-portfolio.vercel.app/",
       image: vinn,
@@ -67,22 +67,16 @@ const Projects = () => {
       </div>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.map((item) => (
-          <>
-            <div key={item.id} className="col">
-              <div className="card shadow">
-                <img
-                  src={item.image}
-                  className="card-img-top"
-                  alt={item.name}
-                />
-                <div className="card-body">
-                  <a href={item.link} className="project-title text-center">
-                    {item.name}
-                  </a>
-                </div>
+          <div key={item.id} className="col">
+            <div className="card shadow">
+              <img src={item.image} className="card-img-top" alt={item.name} />
+              <div className="card-body">
+                <a href={item.link} className="project-title text-center">
+                  {item.name}
+                </a>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </section>

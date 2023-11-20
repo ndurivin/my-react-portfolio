@@ -49,22 +49,16 @@ const Technologies = () => {
       <div className="mt-3">
         <div className="row ">
           {icons.map((item) => (
-            <>
-              <div key={item.id} className="col-md-3 mb-4 ">
-                <div className="testimonial card shadow">
-                  <div className="text-center">
-                    <img
-                      src={item.image}
-                      className="tech-icon"
-                      alt={item.name}
-                    />
-                    <div className="card-body">
-                      <p className="card-text">{item.name}</p>
-                    </div>
+            <div key={item.id} className="col-md-3 mb-4 ">
+              <div className="testimonial card shadow">
+                <div className="text-center">
+                  <img src={item.image} className="tech-icon" alt={item.name} />
+                  <div className="card-body">
+                    <p className="card-text">{item.name}</p>
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>

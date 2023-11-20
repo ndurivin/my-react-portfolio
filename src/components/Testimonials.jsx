@@ -46,21 +46,19 @@ const Testimonials = () => {
       </div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {testimonials.map((item) => (
-          <>
-            <div key={item.id} className="col">
-              <div className="card shadow">
-                <img
-                  src={item.user}
-                  className="testimonials-icon"
-                  alt={item.name}
-                />
-                <div className="card-body">
-                  <h4 className="card-title">{item.name}</h4>
-                  <p className="card-text">{item.desc}</p>
-                </div>
+          <div key={item.id} className="col">
+            <div className="card shadow">
+              <img
+                src={item.user}
+                className="testimonials-icon"
+                alt={item.name}
+              />
+              <div className="card-body">
+                <h4 className="card-title">{item.name}</h4>
+                <p className="card-text">{item.desc}</p>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </section>

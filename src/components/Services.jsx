@@ -58,21 +58,15 @@ const Services = () => {
       </div>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {services.map((item) => (
-          <>
-            <div key={item.id} className="col">
-              <div className="card shadow">
-                <img
-                  src={item.icon}
-                  className="services-icon"
-                  alt={item.title}
-                />
-                <div className="card-body">
-                  <h4 className="card-title">{item.title}</h4>
-                  <p className="card-text">{item.desc}</p>
-                </div>
+          <div key={item.id} className="col">
+            <div className="card shadow">
+              <img src={item.icon} className="services-icon" alt={item.title} />
+              <div className="card-body">
+                <h4 className="card-title">{item.title}</h4>
+                <p className="card-text">{item.desc}</p>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </section>
