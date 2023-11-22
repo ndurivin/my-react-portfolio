@@ -33,7 +33,7 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Full-Stack Developer..",
-      "IT Support Expert..",
+      "Digital Literacy Trainer",
       "Technical Mentor..",
     ],
     loop: {},
@@ -89,10 +89,10 @@ const Hero = () => {
         <div className="py-2 d-flex justify-content-center">
           <a
             className="btn btn-danger"
-            href="../../public/Vinn-Resume.pdf"
+            href="../../public/VinnCVWeb.pdf"
             download={true}
           >
-            Download Resume{" "}
+            Download Resume
             <span>
               <BsArrowDown />
             </span>
