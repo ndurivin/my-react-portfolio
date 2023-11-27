@@ -4,11 +4,12 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const links = [
-    { id: 1, name: "About", path: "about" },
-    { id: 2, name: "Services", path: "services" },
-    { id: 3, name: "Technologies", path: "technologies" },
-    { id: 4, name: "Projects", path: "projects" },
-    { id: 5, name: "Testimonials", path: "testimonials" },
+    { id: 1, name: "", path: "home" },
+    { id: 2, name: "About", path: "about" },
+    { id: 3, name: "Services", path: "services" },
+    { id: 4, name: "Technologies", path: "technologies" },
+    { id: 5, name: "Projects", path: "projects" },
+    { id: 6, name: "Testimonials", path: "testimonials" },
     // { id: 6, name: "Contacts", path: "contacts" },
   ];
   return (
