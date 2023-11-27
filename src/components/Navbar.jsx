@@ -3,10 +3,18 @@ import logo from "../assets/logo.png";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Navbar = () => {
+  const links = [
+    { id: 1, name: "About", path: "about" },
+    { id: 2, name: "Services", path: "services" },
+    { id: 3, name: "Technologies", path: "technologies" },
+    { id: 4, name: "Projects", path: "projects" },
+    { id: 5, name: "Testimonials", path: "testimonials" },
+    // { id: 6, name: "Contacts", path: "contacts" },
+  ];
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div className="container" id="home">
-        <a className="navbar-brand" href="#" id="home">
+        <a className="navbar-brand" href="home" id="home">
           <img src={logo} alt="logo" height="60" />
           <span className="text-white mx-2">VINN</span>
         </a>
@@ -26,80 +34,30 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-                className="nav-link text-white"
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-                className="nav-link text-white"
-              >
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="technologies"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-                className="nav-link text-white"
-              >
-                Technologies
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-                className="nav-link text-white"
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="testimonials"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-                className="nav-link text-white"
-              >
-                Testimonials
-              </Link>
-            </li>
+            {links.map((link) => (
+              <li key={link.id} className="nav-item">
+                <Link
+                  activeClass="active"
+                  to={link.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={200}
+                  className="links"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
             <li className="nav-item">
               <Link
                 activeClass="active"
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-150}
                 duration={200}
-                className="btn btn-primary"
+                className="btn btn-outline-primary"
               >
                 Connect
               </Link>

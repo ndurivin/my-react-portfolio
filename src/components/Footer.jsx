@@ -91,7 +91,7 @@ const Footer = () => {
         <div className="row pt-3 py-5 mt-5">
           <div className="col">
             <p className="text-center">
-              &copy; {currentYear} Vinn Nduri - Fullstack Developer. All Rights
+              &copy; {currentYear} Vinn Nduri - Software Engineer. All Rights
               Reserved.
             </p>
           </div>

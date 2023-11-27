@@ -34,7 +34,7 @@ const Hero = () => {
     words: [
       "Full-Stack Developer..",
       "Graphics Designer..",
-      "Digital Literacy Trainer..s",
+      "Digital Literacy Trainer..",
       "Technical Mentor..",
     ],
     loop: {},
