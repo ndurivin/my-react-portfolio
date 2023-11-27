@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import backend from "../assets/Backend.png";
+import graphics from "../assets/graphics.png";
 import frontend from "../assets/Frontend.png";
 import database from "../assets/database.png";
 import support from "../assets/support.png";
@@ -14,15 +14,15 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Frontend Development",
-      desc: "I have a strong understanding of the frontend development process and I can build any website from scratch. I have experience with HTML, CSS, JavaScript, React, Bootstrap, and Tailwind.",
+      title: "Fullstack Development",
+      desc: "I have a strong understanding of both the frontend development and backend processes and can build any applications from scratch. I work with JavaScript, React, PHP, Ruby, Rails, Bootstrap, and Tailwind.",
       icon: frontend,
     },
     {
       id: 2,
-      title: "Backend Development",
-      desc: "I have a strong understanding of the backend development process and I can build any website from scratch. I have experience with Ruby, Rails, Postgresql, Mysql, Php, Python, and Rspec.",
-      icon: backend,
+      title: "Graphics Design",
+      desc: "A creative graphics designer who combines technical proficiency with artistic innovation to produce visually compelling and effective designs. Designs banners, logos, flyers, posters among other artistic pieces.",
+      icon: graphics,
     },
     {
       id: 3,

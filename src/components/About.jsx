@@ -33,7 +33,8 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Full-Stack Developer..",
-      "Digital Literacy Trainer",
+      "Graphics Designer..",
+      "Digital Literacy Trainer..s",
       "Technical Mentor..",
     ],
     loop: {},

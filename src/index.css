@@ -11,6 +11,9 @@ html {
 .nav-link {
   cursor: pointer;
 }
+.nav-link:hover {
+  color: rgb(236, 5, 13);
+}
 .services-icon {
   height: 80px !important;
   width: 80px !important;
