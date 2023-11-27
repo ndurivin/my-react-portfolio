@@ -15,10 +15,10 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div className="container" id="home">
-        <a className="navbar-brand" href="home" id="home">
+        <Link className="navbar-brand" to="home" id="home">
           <img src={logo} alt="logo" height="60" />
           <span className="text-white mx-2">VINN</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
