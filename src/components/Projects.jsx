@@ -4,6 +4,9 @@ import berils from "../assets/berils.png";
 import unikcolors from "../assets/unikcolors.png";
 import umoja2 from "../assets/umoja2.png";
 import vinn from "../assets/vinn.png";
+import gospelark from "../assets/gospelark.png";
+import gepo from "../assets/gepo.png";
+import afyabank from "../assets/afyabank.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,35 +19,68 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      name: "Afyabank",
+      desc: "A blood bank management system that connects blood banks to donors, hospitals, and healthcare facilities.",
+      link: "",
+      image: afyabank,
+    },
+    {
+      id: 2,
       name: "Portfolio App",
+      desc: "An App detailing my experiences, competencies, technologies used and projects.",
       link: "https://vinn-portfolio.vercel.app/",
       image: vinn,
     },
     {
-      id: 2,
+      id: 3,
+      name: "The Gospel Ark",
+      desc: "A pay to view app that manages the sale of Adventist gospel music and videos.",
+      link: "",
+      image: gospelark,
+    },
+    {
+      id: 4,
       name: "Umoja II SDA Church",
+      desc: "A A church Managemnt application with payments integration managing all church affairs and services",
       link: "https://www.umojaiisda.org/",
       image: umoja2,
     },
     {
-      id: 3,
+      id: 5,
       name: "CMR - Africa",
+      desc: "Africa’s premium legal Capacity Building Platform (NGO).",
       link: "https://www.cmrafrica.org/",
       image: cmr,
     },
     {
-      id: 4,
+      id: 6,
       name: "Kayole Hospital",
+      desc: "Kayole Hospital's website and Management system.",
       link: "https://www.kayolehospital.co.ke/",
       image: kayole,
     },
     {
-      id: 5,
+      id: 7,
       name: "Beril's Hospital",
+      desc: "Beril Hospital's website and Management system.",
       link: "https://berilsmedicalcenter.co.ke/",
       image: berils,
     },
-    { id: 6, name: "Unikcolors Media Institute", link: "", image: unikcolors },
+
+    {
+      id: 8,
+      name: "Give Education A Priority (NGO)",
+      desc: "An NGO operating both in Kenya and South Sudan, focusing on Health, Education, & Clean water provision.",
+      link: "https://www.giveeducationapriority.org/",
+      image: gepo,
+    },
+    {
+      id: 9,
+      name: "Unikcolors Media Institute",
+      desc: "The Insistute's Webiste and Students and Fees management system.",
+      link: "",
+      image: unikcolors,
+    },
   ];
   return (
     <section
@@ -74,6 +110,7 @@ const Projects = () => {
                 <a href={item.link} className="project-title text-center">
                   {item.name}
                 </a>
+                <p className="text-center">{item.desc}</p>
               </div>
             </div>
           </div>
