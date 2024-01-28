@@ -78,7 +78,7 @@ const Projects = () => {
       id: 9,
       name: "Unikcolors Media Institute",
       desc: "The Insistute's Webiste and Students and Fees management system.",
-      link: "",
+      link: "https://www.unikcolors.co.ke/",
       image: unikcolors,
     },
   ];
