@@ -9,6 +9,7 @@ import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bootstrap.png";
 import django from "../assets/django.png";
 import ruby from "../assets/ruby.png";
+import laravel from "../assets/laravel.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,7 +30,7 @@ const Technologies = () => {
     { id: 8, name: "Tailwind", image: tailwind },
     { id: 9, name: "PHP", image: php },
     { id: 10, name: "Ruby", image: ruby },
-    { id: 11, name: "Django", image: django },
+    { id: 11, name: "laravel", image: laravel },
   ];
   return (
     <section

@@ -31,7 +31,7 @@ const Hero = () => {
   ];
 
   const [text] = useTypewriter({
-    words: ["Full-Stack Developer..", "IT Consultant..", "Technical Mentor.."],
+    words: ["Full-Stack Developer.." , "Digital Marketing Expert", "IT Consultant..", "Technical Mentor.."],
     loop: {},
     typeSpeed: 150,
     deleteSpeed: 110,

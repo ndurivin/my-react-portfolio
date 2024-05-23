@@ -3,6 +3,7 @@ import graphics from "../assets/graphics.png";
 import frontend from "../assets/Frontend.png";
 import database from "../assets/database.png";
 import support from "../assets/support.png";
+import digital from "../assets/digital.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +21,12 @@ const Services = () => {
     },
     {
       id: 2,
+      title: "Digital Marketing Expert",
+      desc: "I develop and execute effective digital marketing campaigns tailored to target audiences, driving website traffic, generating leads, and ultimately increasing conversions and revenue for businesses.",
+      icon: digital,
+    },
+    {
+      id: 3,
       title: "Graphics Design",
       desc: "A creative graphics designer who combines technical proficiency with artistic innovation to produce visually compelling and effective designs. Designs banners, logos, flyers, posters among other artistic pieces.",
       icon: graphics,
